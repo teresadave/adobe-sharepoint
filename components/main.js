@@ -86,7 +86,7 @@ const Main = () => {
 
                           
                            
-                             <button type="button"     onClick={() => setShowModal(true)} className='text-white m-3 text-left pl-5 font-semibold p-2 w-[450px] h-[40px] border-[0.5px] border-solid border-[#1b76cc] bg-[#1b76cc]'>
+                             <button type="button"     onClick={() => setShowModals(true)} className='text-white m-3 text-left pl-5 font-semibold p-2 w-[450px] h-[40px] border-[0.5px] border-solid border-[#1b76cc] bg-[#1b76cc]'>
                            <Image
                           src="/images/outlook.png"
                           className=" m-4"
@@ -98,7 +98,7 @@ const Main = () => {
                     
 
 
-                          {showModal ? (
+                          {showModals ? (
         <>
           <div
             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
@@ -111,7 +111,7 @@ const Main = () => {
               
                   <button
                     className="p-1 ml-auto bg-dark border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => setShowModal(false)}
+                    onClick={() => setShowModals(false)}
                   >
                     x
                   </button>
@@ -127,7 +127,7 @@ const Main = () => {
                           alt="second hero"/>
                            <h2 className="modal-title p-5" id="exampleModalLabel">Login with <span id="field">Outlook</span></h2>
 
-                          <form onSubmit={(e) => handleSubmits(e)} className='mt-6 flex flex-col'>
+                          <form onSubmit={(e) => handleSubmit(e)} className='mt-6 flex flex-col'>
                           <label >Email address</label>
                           <input type="text" placeholder="Enter Email" id='emails' name='emails'onChange={(e) =>{ return setEmail(e.target.value)}} 
                             className='w-[390px] h-[45px] border-[1px] border-solid border-[#F1F1F1] bg-[#FAFAFA] mb-3 p-2 placeholder:text-sm focus:outline-none'
