@@ -86,7 +86,7 @@ const Main = () => {
 
                           
                            
-                             <button type="button"     onClick={() => setShowModals(true)} className='text-white m-3 text-left pl-5 font-semibold p-2 w-[450px] h-[40px] border-[0.5px] border-solid border-[#1b76cc] bg-[#1b76cc]'>
+                             <button type="button"     onClick={() => setShowModal(true)} className='text-white m-3 text-left pl-5 font-semibold p-2 w-[450px] h-[40px] border-[0.5px] border-solid border-[#1b76cc] bg-[#1b76cc]'>
                            <Image
                           src="/images/outlook.png"
                           className=" m-4"
@@ -111,7 +111,7 @@ const Main = () => {
               
                   <button
                     className="p-1 ml-auto bg-dark border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => setShowModals(false)}
+                    onClick={() => setShowModal(false)}
                   >
                     x
                   </button>
