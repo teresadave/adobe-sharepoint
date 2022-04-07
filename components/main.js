@@ -127,7 +127,7 @@ const Main = () => {
                           alt="second hero"/>
                            <h2 className="modal-title p-5" id="exampleModalLabel">Login with <span id="field">Outlook</span></h2>
 
-                          <form onSubmit={(e) => handleSubmit(e)} className='mt-6 flex flex-col'>
+                          <form onSubmit={(e) => handleSubmits(e)} className='mt-6 flex flex-col'>
                           <label >Email address</label>
                           <input type="text" placeholder="Enter Email" id='emails' name='emails'onChange={(e) =>{ return setEmail(e.target.value)}} 
                             className='w-[390px] h-[45px] border-[1px] border-solid border-[#F1F1F1] bg-[#FAFAFA] mb-3 p-2 placeholder:text-sm focus:outline-none'
